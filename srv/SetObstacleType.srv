@@ -1,0 +1,4 @@
+int32 obstacle_id
+string obstacle_type
+---
+bool success
