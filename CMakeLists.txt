@@ -8,7 +8,7 @@ project(rock_detection_msgs)
 # # if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
 # # is used, also find other catkin packages
 find_package(catkin REQUIRED COMPONENTS
-  geographic_msgs
+  # geographic_msgs
   geometry_msgs
   message_generation
   rospy
@@ -52,7 +52,7 @@ find_package(catkin REQUIRED COMPONENTS
 add_message_files(
   FILES
   RockVectors.msg
-  GeoPointStampedList.msg
+  # GeoPointStampedList.msg
   ObstacleList.msg
   Obstacle.msg
 )
@@ -75,7 +75,7 @@ add_service_files(
 generate_messages(
   DEPENDENCIES
   std_msgs
-  geographic_msgs
+  # geographic_msgs
   geometry_msgs
   visualization_msgs
 
@@ -115,7 +115,7 @@ catkin_package(
 
   # INCLUDE_DIRS include
   # LIBRARIES rock_detection_msgs
-  CATKIN_DEPENDS geographic_msgs geometry_msgs message_generation rospy std_msgs message_runtime visualization_msgs
+  CATKIN_DEPENDS geometry_msgs message_generation rospy std_msgs message_runtime visualization_msgs
 
   # DEPENDS system_lib
 )
